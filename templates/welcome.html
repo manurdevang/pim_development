@@ -1,0 +1,16 @@
+{% extends 'layouts/login_layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+  {% if user.is_authenticated %}
+    <p>Hi {{ user.username }}!</P>
+    <p><a href="{% url 'logout' %}">logout</a></p>
+  {% else %}
+    <p>You are not logged in</p>
+    <!-- <a href="{% url 'login' %}">login</a> -->
+    <a href="www.google.com">login</a>
+  {% endif %}
+{% endblock %}
+sdfsadfsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+This is Home Page with out login
